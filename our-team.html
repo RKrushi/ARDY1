@@ -14,6 +14,14 @@
    OUR TEAM PAGE
 ══════════════════════════════════════════════════ */
 
+body {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+em, i {
+  font-style: normal;
+}
 /* ── LEADERSHIP PROFILES ── */
 .dir-wrap { margin-top: 64px; }
 
@@ -75,7 +83,7 @@
   font-size: .72rem;
   color: var(--taupe);
   margin-bottom: 14px;
-  font-style: italic;
+  font-style: none;
 }
 .dp-badges {
   display: flex;
@@ -106,7 +114,7 @@
   padding: 2px 0 2px 14px;
   margin: 18px 0;
   font-family: var(--serif);
-  font-style: italic;
+  font-style: none;
   font-size: .93rem;
   color: var(--taupe);
   line-height: 1.65;
@@ -240,7 +248,7 @@
 /* ── ACCORDION ── */
 .adv-section { background:var(--cream); padding:80px 5%; }
 .adv-section h2 { font-family:var(--serif); font-size:clamp(2rem,4vw,3.2rem); font-weight:300; color:var(--brown); text-align:center; margin-bottom:8px; }
-.adv-section h2 em { font-style:italic; }
+.adv-section h2 em { font-style:none; }
 .adv-sub { font-size:.84rem; color:var(--taupe); text-align:center; max-width:540px; margin:0 auto 48px; line-height:1.8; }
 .acc-wrap { max-width:860px; margin:0 auto; display:flex; flex-direction:column; gap:8px; }
 .acc-item { border:1px solid rgba(196,182,147,.28); background:var(--blush); }
@@ -387,7 +395,7 @@
 <!-- ══ PREMIUM SERVICES ═══════════════════════════════ -->
 <section class="services-section rv">
   <span class="eyebrow">— What We Offer —</span>
-  <h2 class="sec-title">Premium Services for <em>Every Need</em></h2>
+  <h2 class="sec-title">Premium Services for Every Need</h2>
   <div class="srv-grid">
     <div class="srv-item rv d1">
       <div class="srv-n">01</div>
@@ -430,7 +438,7 @@
   <div class="cta-ov"></div>
   <div class="cta-inner rv">
     <div class="cta-eyebrow">Secure Your Property</div>
-    <h2>Start Your <em>Property Journey</em></h2>
+    <h2>Start Your Property Journey</h2>
     <p>Join thousands of successful investors who have trusted ARDY Real Estate for premium property acquisitions in the world's most dynamic real estate market.</p>
     <div class="cta-stats">
       <div class="cs"><span class="cs-n">750+</span><span class="cs-l">Happy Clients</span></div>
@@ -448,7 +456,7 @@
 <section class="invest-band">
   <div class="ib-left rv-l">
     <span class="eyebrow">— Exclusive Dubai Investments —</span>
-    <h2>Ready to Invest in <em>Dubai's Future?</em></h2>
+    <h2>Ready to Invest in Dubai's Future?</h2>
     <p>Connect with our team of dedicated property specialists and begin your Dubai investment journey today. We make it simple, secure, and highly rewarding.</p>
     <div class="ib-btns">
       <a href="contact.html" class="btn-gold-solid">Book Free Consultation</a>
@@ -465,7 +473,7 @@
 
 <!-- ══ ARDY ADVANTAGE ACCORDION ══════════════════════ -->
 <section class="adv-section">
-  <h2>The <em>ARDY</em> Advantage</h2>
+  <h2>The ARDY Advantage</h2>
   <p class="adv-sub">Experience unparalleled service, exclusive opportunities, and expert guidance in Dubai's dynamic real estate market</p>
   <div class="acc-wrap">
     <div class="acc-item">

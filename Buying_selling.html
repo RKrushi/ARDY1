@@ -9,7 +9,14 @@
 <link rel="stylesheet" href="css/nav.css"/>
 <link rel="stylesheet" href="css/footer.css"/>
 <style>
+body {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
 
+em, i {
+  font-style: normal;
+}
 /* ── PAGE HERO BANNER ── */
 .page-hero{position:relative;height:400px;display:flex;align-items:flex-end;justify-content:flex-start;overflow:hidden;margin-top:64px}
 .page-hero-bg{position:absolute;inset:0}
@@ -19,7 +26,7 @@
 .page-hero-body .hero-eyebrow{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .page-hero-body .hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold)}
 .page-hero-body h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.05;letter-spacing:-.01em;margin-bottom:14px;color:var(--blush)}
-.page-hero-body h1 em{font-style:italic;color:var(--white)}
+.page-hero-body h1 em{font-style:none;color:var(--white)}
 .page-hero-body p{font-size:.88rem;line-height:1.85;color:rgba(241,236,234,.8);margin-bottom:24px}
 
 /* ── INTRO SECTION ── */
@@ -54,7 +61,7 @@
 
 /* ── PREMIUM SERVICES (3-col numbered, like index services section) ── */
 .premium-section{background:var(--blush);padding:80px 5%}
-.premium-section h2 em{font-style:italic}
+.premium-section h2 em{font-style:none}
 .premium-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:50px}
 .prem-item{border-top:2px solid var(--gold);padding-top:20px}
 .prem-n{font-family:var(--serif);font-size:3rem;font-weight:300;color:rgba(196,182,147,.35);line-height:1;margin-bottom:10px}
@@ -76,7 +83,7 @@
 /* ── ADVANTAGE / ACCORDION ── */
 .adv-section{background:var(--cream);padding:80px 5%}
 .adv-section .sec-title{text-align:center;margin-bottom:8px}
-.adv-section .sec-title em{font-style:italic}
+.adv-section .sec-title em{font-style:none}
 .adv-sub{font-size:.85rem;color:var(--taupe);text-align:center;margin-bottom:48px}
 .acc-wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
 .acc-item{border:1px solid rgba(196,182,147,.3);background:var(--blush)}
@@ -161,11 +168,11 @@
   </button>
 </nav>
 <div class="page-hero">
-  <div class="page-hero-bg"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1600&q=85" alt="Buying &amp;<br/><em>Selling</em>"/></div>
+  <div class="page-hero-bg"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=1600&q=85" alt="Buying &amp;<br/>Selling"/></div>
   <div class="page-hero-ov"></div>
   <div class="page-hero-body rv">
     <p class="hero-eyebrow">Expert Guidance · Seamless Transactions</p>
-    <h1>Buying &amp;<br/><em>Selling</em></h1>
+    <h1>Buying &amp;<br/>Selling</h1>
     <p>End-to-end support for all your Dubai property purchase and sale requirements with complete transparency.</p>
     <a href="../contact.html" class="btn-gold">Get Started</a>
   </div>
@@ -173,7 +180,7 @@
 <div class="intro-section">
   <div class="intro-body rv-l">
     <span class="eyebrow">Trusted Property Transactions</span>
-    <h2 class="sec-title">Expert <em>Buying &amp; Selling</em> Services</h2>
+    <h2 class="sec-title">Expert Buying &amp; Selling Services</h2>
     <p>Whether you're purchasing your first Dubai property or expanding your portfolio, our dedicated specialists guide you through every step — from market analysis and property search to negotiations, legal compliance, and final handover.</p>
     <p>We work with <strong>Danube Properties</strong> and <strong>BNW Realty</strong> to give you access to the best properties at competitive prices with full transparency and zero hidden costs.</p>
     <div class="intro-tags">
@@ -183,13 +190,13 @@
     </div>
   </div>
   <div class="intro-img-col rv-r">
-    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=85" alt="Expert <em>Buying &amp; Selling</em> Services"/>
+    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=85" alt="Expert Buying &amp; Selling Services"/>
   </div>
 </div>
 <div class="svc-section">
   <span class="eyebrow-center">End-to-End Transaction Support with Full Legal Compliance</span>
   <h2 class="sec-title" style="text-align:center">Our Buying &amp; Selling Services</h2>
-  <p style="text-align:center;font-size:.82rem;color:var(--taupe);margin-top:8px;font-style:italic">End-to-end transaction support with complete legal compliance and expert guidance.</p>
+  <p style="text-align:center;font-size:.82rem;color:var(--taupe);margin-top:8px;font-style:none">End-to-end transaction support with complete legal compliance and expert guidance.</p>
   <div class="svc-grid">
   <div class="svc-card rv d1">
     <div class="svc-card-top"><span class="svc-card-ic">📊</span><h4>Market Analysis</h4></div>
@@ -229,7 +236,7 @@
     Our Premium Services
     <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
   </span>
-  <h2 class="sec-title" style="text-align:center">Premium Services for <em>Every Need</em></h2>
+  <h2 class="sec-title" style="text-align:center">Premium Services for Every Need</h2>
   <p style="text-align:center;font-size:.82rem;color:var(--taupe);max-width:620px;margin:8px auto 0">With our wide selection of property services tailored to your specific needs, let us relieve the burden and increase the value of your investment.</p>
   <div class="premium-grid">
   <div class="prem-item rv d1">
@@ -272,7 +279,7 @@
 </div>
 <div class="dark-band rv">
   <div class="eyebrow-c">— Your Trusted Transaction Partner —</div>
-  <h2>Buy or Sell With <em>Complete Confidence</em></h2>
+  <h2>Buy or Sell With Complete Confidence</h2>
   <p>Our expert team handles every aspect of your Dubai property transaction — from the initial search and due diligence through to keys-in-hand. Transparent, professional, and always on your side.</p>
   <a href="../contact.html" class="btn-gold">Book Free Consultation</a>
 </div>
@@ -282,7 +289,7 @@
     Why Choose ARDY
     <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
   </span>
-  <h2 class="sec-title" style="text-align:center">The <em>ARDY</em> Advantage</h2>
+  <h2 class="sec-title" style="text-align:center">The ARDY Advantage</h2>
   <p class="adv-sub">Experience unparalleled service, exclusive opportunities, and expert guidance in Dubai's dynamic real estate market.</p>
   <div class="acc-wrap">
     <div class="acc-item rv">
@@ -407,7 +414,7 @@
 <div class="cta-band">
   <div class="cta-left rv-l">
     <span class="eyebrow">— A Exclusive Global Investment —</span>
-    <h2>Ready to Invest in <em>Dubai's Future?</em></h2>
+    <h2>Ready to Invest in Dubai's Future?</h2>
     <p>Join thousands of satisfied investors who have trusted ARDY Real Estate for premium property investments in Dubai's most sought-after locations. Start your journey today.</p>
     <div class="cta-btns">
       <a href="../contact.html" class="btn-gold-solid">Book Free Consultation</a>
@@ -427,7 +434,7 @@
     Get In Touch
     <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
   </span>
-  <h2 class="sec-title" style="text-align:center">Start Your <em>Property Journey</em></h2>
+  <h2 class="sec-title" style="text-align:center">Start Your Property Journey</h2>
   <div class="contact-grid">
     <div class="rv-l">
       <div class="ci-item"><span class="ci-ic">📍</span><div><p class="ci-label">Office Address</p><p>Al Owais Building, Sheikh Zayed Road, Dubai, UAE</p></div></div>
@@ -497,7 +504,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 ARDY Real Estate. All rights reserved. Powered by Majestic Group.</p>
+    <p>© 2026 ARDY Real Estate. All rights reserved. Powered by Majestic Group.</p>
     <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">RERA Licence</a></p>
   </div>
 </footer>

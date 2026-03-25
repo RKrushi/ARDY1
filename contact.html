@@ -9,7 +9,14 @@
 <link rel="stylesheet" href="css/nav.css"/>
 <link rel="stylesheet" href="css/footer.css"/>
 <style>
+body {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
 
+em, i {
+  font-style: normal;
+}
 /* ── PAGE HERO ── */
 .ph{position:relative;height:50vh;min-height:380px;overflow:hidden;display:flex;align-items:flex-end;margin-top:64px}
 .ph-bg{position:absolute;inset:0}
@@ -19,7 +26,7 @@
 .ph-ey{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .ph-ey::before{content:'';width:28px;height:1px;background:var(--gold)}
 .ph-body h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.05;letter-spacing:-.01em;margin-bottom:14px;color:var(--blush)}
-.ph-body h1 em{font-style:italic;color:#fff}
+.ph-body h1 em{font-style:none;color:#fff}
 .ph-body p{font-size:.88rem;line-height:1.85;color:rgba(241,236,234,.8)}
 
 /* ── CONTACT SECTION ── */
@@ -200,7 +207,7 @@
   <div class="ph-ov"></div>
   <div class="ph-body rv">
     <p class="ph-ey">We're Here to Help</p>
-    <h1>Get In <em>Touch</em></h1>
+    <h1>Get In Touch</h1>
     <p>Speak with our Dubai property specialists today. We'll guide you to the perfect investment for your goals and budget.</p>
   </div>
 </div>
@@ -211,7 +218,7 @@
     <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
     Get In Touch
   </span>
-  <h2 class="sec-title">Start Your <em>Property Journey</em></h2>
+  <h2 class="sec-title">Start Your Property Journey</h2>
 
   <div class="contact-grid">
 
@@ -327,7 +334,7 @@
     <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
     Find Us
   </span>
-  <h2 class="sec-title">Our <em>Office Locations</em></h2>
+  <h2 class="sec-title">Our Office Locations</h2>
   <div class="map-wrap">
     <iframe class="map-embed"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.8282376522!2d55.26655831495855!3d25.204484083894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1cbb7e2!2sSheikh%20Zayed%20Rd%2C%20Dubai!5e0!3m2!1sen!2sae!4v1620000000000!5m2!1sen!2sae"
@@ -365,7 +372,7 @@
     <span style="width:24px;height:1px;background:var(--gold);display:inline-block"></span>
     Frequently Asked Questions
   </span>
-  <h2 class="sec-title">Common <em>Questions</em> Answered</h2>
+  <h2 class="sec-title">Common Questions Answered</h2>
   <div class="faq-grid">
     <div class="faq-item rv d1">
       <div class="faq-q" onclick="toggleFaq(this)"><span>Can foreigners buy property in Dubai?</span><span class="faq-plus">+</span></div>
@@ -398,7 +405,7 @@
 <section class="invest-band">
   <div class="ib-left rv-l">
     <span class="eyebrow">— Your Investment Journey Starts Here —</span>
-    <h2>Speak With Our <em>Dubai Specialists</em> Today</h2>
+    <h2>Speak With Our Dubai Specialists Today</h2>
     <p>Our team of experienced Dubai property specialists are ready to guide you to the right investment. Book your free, no-obligation consultation and let's discuss your property goals.</p>
     <div class="ib-btns">
       <a href="tel:+971505761914" class="btn-gold-solid">Call Now</a>

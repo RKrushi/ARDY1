@@ -17,7 +17,15 @@
             --sand #ece5d8 / --taupe rgb(99,88,65)
    Fonts:   Cormorant Garamond (serif) + Raleway
 ══════════════════════════════════════════════════ */
+body {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
 
+/* ── Fix: no italic anywhere ── */
+em, i {
+  font-style: normal;
+}
 /* ── PAGE HERO: text-left image-right, NO overlay, blush bg ── */
 .ab-hero{
   display:grid;grid-template-columns:1fr 1fr;
@@ -37,7 +45,7 @@
   font-weight:300;line-height:1.05;
   color:var(--brown);margin-bottom:22px;
 }
-.ab-hero-text h1 em{font-style:italic;color:var(--taupe)}
+.ab-hero-text h1 em{font-style:none;color:var(--taupe)}
 .ab-hero-text p{
   font-size:.86rem;line-height:1.9;
   color:var(--taupe);margin-bottom:13px;
@@ -77,7 +85,7 @@
   font-family:var(--serif);font-size:clamp(1.4rem,2.8vw,2.3rem);
   font-weight:300;color:var(--brown);line-height:1.2;margin-bottom:10px;
 }
-.as-big em{font-style:italic;color:var(--taupe)}
+.as-big em{font-style:none;color:var(--taupe)}
 .as-sub{font-size:.82rem;color:var(--taupe);max-width:620px;margin:0 auto;line-height:1.8}
 
 /* ── WHO WE ARE: image left + text right (exact index .who) ── */
@@ -102,7 +110,7 @@
   font-size:clamp(1.5rem,2.8vw,2.5rem);
   font-weight:300;color:var(--brown);margin-bottom:18px;
 }
-.who-body h2 em{font-style:italic}
+.who-body h2 em{font-style:none}
 .who-body p{font-size:.85rem;line-height:1.85;color:var(--taupe);margin-bottom:13px}
 .who-body p strong{color:var(--brown)}
 .who-cards{display:flex;flex-direction:column;gap:12px;margin-top:26px}
@@ -211,7 +219,7 @@
   display:inline-block;margin-top:3px;font-weight:700;
 }
 .t-card > p{
-  font-family:var(--serif);font-style:italic;
+  font-family:var(--serif);font-style:none;
   font-size:.93rem;line-height:1.75;color:var(--taupe);
 }
 .t-stats{
@@ -277,7 +285,7 @@
   font-weight:300;color:var(--brown);
   text-align:center;margin-bottom:8px;
 }
-.adv-section h2 em{font-style:italic}
+.adv-section h2 em{font-style:none}
 .adv-sub{
   font-size:.84rem;color:var(--taupe);
   text-align:center;max-width:540px;
@@ -360,9 +368,9 @@
 
 <!-- ══ PAGE HERO: text-left + image-right ══════════ -->
 <section class="ab-hero">
-  <div class="ab-hero-text rv-l">
+  <div class="ab-hero-text rv-l>
     <span class="ab-eyebrow">▸ About ARDY Real Estate</span>
-    <h1>Premier Real Estate<br/>Partner in <em>Dubai &amp; UAE</em></h1>
+    <h1>Premier Real Estate<br/>Partner in Dubai &amp; UAE</h1>
     <p>ARDY Real Estate is the Dubai-based extension of the Majestic Group, bringing over a decade of expertise in real estate and investment to the UAE's dynamic property market.</p>
     <p>As authorised partners of <a href="services/off-plan-property-management.html"><strong>Danube Properties</strong></a> and <a href="services/project-sales-marketing.html"><strong>BNW Realty</strong></a>, we offer exclusive access to pre-launch opportunities, flexible payment plans, and fully furnished luxury residences.</p>
     <a href="contact.html" class="btn-gold" style="margin-top:14px">Get Free Consultation</a>
@@ -375,7 +383,7 @@
 <!-- ══ ABOUT STRIP ══════════════════════════════════ -->
 <div class="about-strip rv">
   <span class="eyebrow">Connecting You to Dubai's Best Property Opportunities</span>
-  <h2 class="as-big">At ARDY, <em>we are professionals above anyone</em></h2>
+  <h2 class="as-big">At ARDY, we are professionals above anyone</h2>
   <p class="as-sub">Our team of dedicated property specialists brings unparalleled expertise to every investment, ensuring you receive the finest opportunities Dubai's dynamic market has to offer.</p>
 </div>
 
@@ -386,7 +394,7 @@
   </div>
   <div class="who-body rv-r">
     <span class="eyebrow">— Our Story —</span>
-    <h2>The <em>Driving Force</em> Behind ARDY</h2>
+    <h2>The Driving Force Behind ARDY</h2>
     <p>Founded as the Dubai-based extension of the Majestic Group, ARDY Real Estate bridges the gap between ambitious investors and the world's most exciting property market.</p>
     <p>We specialise in off-plan investments, luxury residential properties, and comprehensive property management — all backed by deep local knowledge and a commitment to delivering exceptional returns for our clients.</p>
     <div class="who-cards">
@@ -418,7 +426,7 @@
 <!-- ══ TRUSTED PARTNERSHIPS ═════════════════════════ -->
 <section class="partners rv">
   <span class="eyebrow">— Our Developer Partners —</span>
-  <h2 class="sec-title">Trusted <em>Partnerships</em></h2>
+  <h2 class="sec-title">Trusted Partnerships</h2>
   <div class="partners-grid">
     <div class="p-card rv d1">
       <div class="p-ic">🏗️</div>
@@ -442,7 +450,7 @@
     Six Reasons to Trust Us
     <span style="width:28px;height:1px;background:var(--gold);display:inline-block"></span>
   </span>
-  <h2 class="sec-title">Why Choose <em>ARDY Real Estate</em></h2>
+  <h2 class="sec-title">Why Choose ARDY Real Estate</h2>
   <div class="why-grid">
     <div class="why-item rv d1">
       <span class="why-ic">🌍</span>
@@ -480,7 +488,7 @@
 <!-- ══ DARK BAND: quote/CTA ══════════════════════════ -->
 <div class="dark-band rv">
   <span class="eyebrow">— Our Commitment —</span>
-  <h2>Discover Your <em>Dream Home</em> in Dubai</h2>
+  <h2>Discover Your Dream Home in Dubai</h2>
   <p>We connect investors with the world's most exciting real estate opportunities — from waterfront apartments to luxury villas — with full support at every step of your journey.</p>
   <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:4px">
     <a href="contact.html" class="btn-gold-solid">Book Free Consultation</a>
@@ -495,7 +503,7 @@
     Client Success Stories
     <span style="width:28px;height:1px;background:var(--gold);display:inline-block"></span>
   </span>
-  <h2 class="sec-title">500+ Happy Clients From <em>India &amp; Dubai</em></h2>
+  <h2 class="sec-title">500+ Happy Clients From India &amp; Dubai</h2>
   <p class="sec-desc" style="margin:0 auto 0;text-align:center">Discover why investors from across India and UAE trust ARDY Real Estate for their premium property investments in Dubai's most sought-after locations.</p>
   <div class="testi-grid">
     <div class="t-card rv d1">
@@ -538,7 +546,7 @@
 <section class="invest-band">
   <div class="ib-left rv-l">
     <span class="eyebrow">— Exclusive Dubai Investments —</span>
-    <h2>Ready to Invest in <em>Dubai's Future?</em></h2>
+    <h2>Ready to Invest in Dubai's Future?</h2>
     <p>Join thousands of successful investors who have trusted ARDY Real Estate for premium property acquisitions in the world's most dynamic real estate market.</p>
     <div class="ib-btns">
       <a href="contact.html" class="btn-gold-solid">Book Free Consultation</a>
@@ -555,7 +563,7 @@
 
 <!-- ══ ARDY ADVANTAGE ACCORDION ══════════════════════ -->
 <section class="adv-section">
-  <h2>The <em>ARDY</em> Advantage</h2>
+  <h2>The ARDY Advantage</h2>
   <p class="adv-sub">Experience unparalleled service, exclusive opportunities, and expert guidance in Dubai's dynamic real estate market</p>
   <div class="acc-wrap">
 
@@ -650,7 +658,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 ARDY Real Estate. All rights reserved. Powered by Majestic Group.</p>
+    <p>© 2026 ARDY Real Estate. All rights reserved. Powered by Majestic Group.</p>
     <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">RERA Licence</a></p>
   </div>
 </footer>

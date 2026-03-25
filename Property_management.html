@@ -9,6 +9,14 @@
 <link rel="stylesheet" href="css/nav.css"/>
 <link rel="stylesheet" href="css/footer.css"/>
 <style>
+  body {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}
+
+em, i {
+  font-style: normal;
+}
 
 /* ── PAGE HERO BANNER ── */
 .page-hero{position:relative;height:400px;display:flex;align-items:flex-end;justify-content:flex-start;overflow:hidden;margin-top:64px}
@@ -19,7 +27,7 @@
 .page-hero-body .hero-eyebrow{font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .page-hero-body .hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--gold)}
 .page-hero-body h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.05;letter-spacing:-.01em;margin-bottom:14px;color:var(--blush)}
-.page-hero-body h1 em{font-style:italic;color:var(--white)}
+.page-hero-body h1 em{font-style:none;color:var(--white)}
 .page-hero-body p{font-size:.88rem;line-height:1.85;color:rgba(241,236,234,.8);margin-bottom:24px}
 
 /* ── INTRO SECTION ── */
@@ -54,7 +62,7 @@
 
 /* ── PREMIUM SERVICES (3-col numbered, like index services section) ── */
 .premium-section{background:var(--blush);padding:80px 5%}
-.premium-section h2 em{font-style:italic}
+.premium-section h2 em{font-style:none}
 .premium-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:50px}
 .prem-item{border-top:2px solid var(--gold);padding-top:20px}
 .prem-n{font-family:var(--serif);font-size:3rem;font-weight:300;color:rgba(196,182,147,.35);line-height:1;margin-bottom:10px}
@@ -76,7 +84,7 @@
 /* ── ADVANTAGE / ACCORDION ── */
 .adv-section{background:var(--cream);padding:80px 5%}
 .adv-section .sec-title{text-align:center;margin-bottom:8px}
-.adv-section .sec-title em{font-style:italic}
+.adv-section .sec-title em{font-style:none}
 .adv-sub{font-size:.85rem;color:var(--taupe);text-align:center;margin-bottom:48px}
 .acc-wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:8px}
 .acc-item{border:1px solid rgba(196,182,147,.3);background:var(--blush)}
@@ -189,7 +197,7 @@
 <div class="svc-section">
   <span class="eyebrow-center">Complete Solutions for Hassle-Free Ownership and Maximum Returns</span>
   <h2 class="sec-title" style="text-align:center">Our Property Management Services</h2>
-  <p style="text-align:center;font-size:.82rem;color:var(--taupe);margin-top:8px;font-style:italic">Complete solutions for hassle-free ownership and maximum returns.</p>
+  <p style="text-align:center;font-size:.82rem;color:var(--taupe);margin-top:8px;font-style:none">Complete solutions for hassle-free ownership and maximum returns.</p>
   <div class="svc-grid">
   <div class="svc-card rv d1">
     <div class="svc-card-top"><span class="svc-card-ic">🔧</span><h4>Maintenance Management</h4></div>
@@ -497,7 +505,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 ARDY Real Estate. All rights reserved. Powered by Majestic Group.</p>
+    <p>© 2026 ARDY Real Estate. All rights reserved. Powered by Majestic Group.</p>
     <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">RERA Licence</a></p>
   </div>
 </footer>
