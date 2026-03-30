@@ -33,5 +33,5 @@ jobs:
             Time: ${{ github.event.head_commit.timestamp }}
 
             -- GitHub Actions
-          to: youremail@gmail.com
-          from: youremail@gmail.com
+          to: rushikeshkontam130@gmail.com
+          from: rkontam0@gmail.com
