@@ -1,1 +1,37 @@
+name: Send Email on Website Update
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send notification email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.GMAIL_USER }}
+          password: ${{ secrets.GMAIL_APP_PASS }}
+          subject: "Website Updated - ${{ github.repository }}"
+          body: |
+            Hello,
+
+            Your website has been updated successfully.
+
+            Details:
+            - Pushed by: ${{ github.actor }}
+            - Branch: ${{ github.ref_name }}
+            - Commit message: ${{ github.event.head_commit.message }}
+            - Commit ID: ${{ github.sha }}
+            - View changes: ${{ github.event.compare }}
+
+            Time: ${{ github.event.head_commit.timestamp }}
+
+            -- GitHub Actions
+          to: youremail@gmail.com
+          from: youremail@gmail.com
