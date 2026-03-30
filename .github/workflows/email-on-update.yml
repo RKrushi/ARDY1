@@ -16,7 +16,7 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           username: ${{ secrets.GMAIL_USER }}
-          password: ${{ secrets.xetyjenqqnameiqh}}
+          password: ${{ secrets.amimpqdrzvaenjzb}}
           subject: "Website Updated - ${{ github.repository }}"
           body: |
             Hello,
