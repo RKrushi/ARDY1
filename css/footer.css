@@ -76,5 +76,14 @@
 .footer-bottom a:hover{color:var(--gold)}
 
 /* ── Responsive ── */
-@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
-@media(max-width:540px){.footer-top{grid-template-columns:1fr}}
+@media(max-width:900px){
+  .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:540px){
+  .footer-top{grid-template-columns:1fr;gap:28px;padding:40px 5%}
+  .ft-brand>p{max-width:100%}
+  .ft-nl-form{flex-direction:column}
+  .ft-nl-form input{border-right:1px solid rgba(196,182,147,.2);border-bottom:none}
+  .ft-nl-form button{width:100%}
+  .footer-bottom{flex-direction:column;text-align:center;gap:6px}
+}

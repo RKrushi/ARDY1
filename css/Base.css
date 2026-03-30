@@ -107,3 +107,9 @@ section{padding:80px 5%}
 .rv-r.in{opacity:1;transform:translateX(0)}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 .d4{transition-delay:.32s}.d5{transition-delay:.40s}
+
+@media(max-width:480px){
+  .btn-gold,.btn-brown,.btn-outline-light,.btn-gold-solid,.btn-outline-gold{
+    width:100%;text-align:center;display:block;
+  }
+}
