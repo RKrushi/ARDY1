@@ -16,7 +16,7 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 465
           username: ${{ secrets.GMAIL_USER }}
-          password: ${{ secrets.zaeapiunatgbnukg}}
+          password: ${{ secrets.GMAIL_APP_PASS }}
           subject: "Website Updated - ${{ github.repository }}"
           body: |
             Hello,
@@ -34,4 +34,4 @@ jobs:
 
             -- GitHub Actions
           to: kontamrushikesh.s2@gmail.com
-          from: rkontam0@gmail.com
+          from: ${{ secrets.GMAIL_USER }}
